@@ -1,0 +1,228 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+	<meta charset="UTF-8">
+	<title></title>
+	<style>
+	*{padding: 0;margin: 0;}
+	body{background: lightblue;overflow: hidden;}
+	#ghosts{position:absolute;left: 0;}
+	.ghost{
+		width: 140px;
+		position: relative;
+		margin-top: 300px;
+		margin-left: 10px;
+		float: left;
+		/*animation: ghostMove 0.5s linear infinite normal;*/
+	}
+	/*@keyframes ghostMove{
+		100%{left: 1px;}
+	}*/
+	.body{
+		position: relative;
+		animation: ghostUpDown 1s infinite alternate;
+		margin-top: 10px;
+	}
+	@keyframes ghostUpDown{
+		100%{margin-top:-30px;}
+	}
+	.ghostbody{
+		width: 120px;
+		height:165px;
+		position: relative;
+		background:#fff;
+		border-radius: 50% 50% 0 0;
+	}
+	.ghostEye{
+		width: 15px;
+		height: 20px;
+		border-radius: 100%;
+		border: 2px solid #061e74;
+		position: absolute;
+		box-shadow: -2px -2px #fff inset;
+		top: 60px;
+		background: #061e74;
+	}
+	.left{left: 40px;}
+	.right{right:45px;}
+	.ghostMouth{
+		width: 15px;height: 25px;
+		border: 2px solid #999;
+		border-radius: 100%;
+		position: absolute;
+		top: 110px;
+		left: 60px;
+	}
+	.ghostWave{
+		position: absolute;
+		width: 120px;
+		height: 20px;
+		background-size: 20px 20px;
+		background-image: radial-gradient(circle at 50% 30%,#fff,71%,transparent 71%);
+		overflow: hidden;
+		animation: wave 0.3s linear infinite ;
+	}
+	@keyframes wave{
+		100%{background-position: -20px 0;}
+	}
+	.ghostShadow{
+		position: absolute;
+		top: 200px;left: 10px;
+		width: 100px;
+		height: 10px;
+		border-radius: 100%;
+		background: #061e74;
+		opacity: 1;
+		animation: shadow 1s linear infinite alternate;
+	}
+	@keyframes shadow{
+		100%{opacity: 0.3;}
+	}
+	#ghosts:after{clear: both;content: '.';display: block;height: 0px;}
+	</style>
+</head>
+<body>
+<div id="ghosts">
+	<div class="ghost">
+	    <div class="body">
+	    	<div class="ghostbody"></div>
+		    <div class="ghostEye left"></div>
+		    <div class="ghostEye right"></div>
+		    <div class="ghostMouth"></div>
+		    <div class="ghostWave"></div>
+	    </div>
+	    <div class="ghostShadow"></div>
+	</div>
+	<div class="ghost">
+	    <div class="body">
+	    	<div class="ghostbody"></div>
+		    <div class="ghostEye left"></div>
+		    <div class="ghostEye right"></div>
+		    <div class="ghostMouth"></div>
+		    <div class="ghostWave"></div>
+	    </div>
+	    <div class="ghostShadow"></div>
+	</div>
+	<div class="ghost">
+	    <div class="body">
+	    	<div class="ghostbody"></div>
+		    <div class="ghostEye left"></div>
+		    <div class="ghostEye right"></div>
+		    <div class="ghostMouth"></div>
+		    <div class="ghostWave"></div>
+	    </div>
+	    <div class="ghostShadow"></div>
+	</div>
+	<div class="ghost">
+	    <div class="body">
+	    	<div class="ghostbody"></div>
+		    <div class="ghostEye left"></div>
+		    <div class="ghostEye right"></div>
+		    <div class="ghostMouth"></div>
+		    <div class="ghostWave"></div>
+	    </div>
+	    <div class="ghostShadow"></div>
+	</div>
+	<div class="ghost">
+	    <div class="body">
+	    	<div class="ghostbody"></div>
+		    <div class="ghostEye left"></div>
+		    <div class="ghostEye right"></div>
+		    <div class="ghostMouth"></div>
+		    <div class="ghostWave"></div>
+	    </div>
+	    <div class="ghostShadow"></div>
+	</div>
+	<div class="ghost">
+	    <div class="body">
+	    	<div class="ghostbody"></div>
+		    <div class="ghostEye left"></div>
+		    <div class="ghostEye right"></div>
+		    <div class="ghostMouth"></div>
+		    <div class="ghostWave"></div>
+	    </div>
+	    <div class="ghostShadow"></div>
+	</div>
+	<div class="ghost">
+	    <div class="body">
+	    	<div class="ghostbody"></div>
+		    <div class="ghostEye left"></div>
+		    <div class="ghostEye right"></div>
+		    <div class="ghostMouth"></div>
+		    <div class="ghostWave"></div>
+	    </div>
+	    <div class="ghostShadow"></div>
+	</div>
+	<div class="ghost">
+	    <div class="body">
+	    	<div class="ghostbody"></div>
+		    <div class="ghostEye left"></div>
+		    <div class="ghostEye right"></div>
+		    <div class="ghostMouth"></div>
+		    <div class="ghostWave"></div>
+	    </div>
+	    <div class="ghostShadow"></div>
+	</div>
+	<div class="ghost">
+	    <div class="body">
+	    	<div class="ghostbody"></div>
+		    <div class="ghostEye left"></div>
+		    <div class="ghostEye right"></div>
+		    <div class="ghostMouth"></div>
+		    <div class="ghostWave"></div>
+	    </div>
+	    <div class="ghostShadow"></div>
+	</div>
+	<div class="ghost">
+	    <div class="body">
+	    	<div class="ghostbody"></div>
+		    <div class="ghostEye left"></div>
+		    <div class="ghostEye right"></div>
+		    <div class="ghostMouth"></div>
+		    <div class="ghostWave"></div>
+	    </div>
+	    <div class="ghostShadow"></div>
+	</div>
+</div>
+
+<script type="text/javascript">
+function getClass(parent,tagName,sClass){
+	var aAll = parent.getElementsByTagName(tagName);
+	var arr = [];
+	for(var i = 0; i < aAll.length; i ++){
+		var aClass = aAll[i].className.split(" ");	//将元素的className转换成数组，包含所有className
+		for(var j = 0; j < aClass.length; j ++){
+			if(aClass[j]==sClass){
+				arr.push(aAll[i]);
+				break;		
+			}
+		}
+	}
+	return arr;
+}
+var oGhosts=document.getElementById('ghosts');
+
+var timer=setInterval(move,1000/60);
+
+function move(){
+	oGhosts.style.left=oGhosts.offsetLeft-3+"px";
+	if(oGhosts.offsetLeft<=-150){
+		oGhosts.style.left=0+"px";
+	}
+}
+var aGhosts=getClass(oGhosts,'div','ghost');
+//鼠标移入暂停播放
+for(var i=0,len=aGhosts.length;i<len;i++){
+	aGhosts[i].onmouseover=function()		
+	{
+		clearInterval(timer);
+	}
+	aGhosts[i].onmouseout=function()
+	{
+		timer=setInterval(move,1000/60);
+	}
+}
+
+</script>
+</body>
+</html>
