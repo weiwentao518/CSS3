@@ -1,0 +1,89 @@
+*{padding: 0;margin: 0;}
+		body{background: #333;}
+		@media (min-width: 980px){
+			.box{
+				width: 200px;
+				height: 240px;
+				margin: 60px;
+				float: left;
+			}
+			.content{
+				width: 1000px;
+				height: 400px;
+				margin: 100px auto;
+			}
+		}
+		@media (max-width: 600px){
+			.box{
+				width: 200px;
+				height: 240px;
+			}
+			.content{
+			width: 620px;
+			height: 400px;
+			margin: 100px auto;
+			}
+		}
+		.icon{
+			width: 180px;height: 180px;
+			display: block;
+			margin:0 auto;
+			transition: 0.3s;
+		}
+		.icon:hover {
+			transform: scale(1.1) rotate(360deg);
+		}
+		.box-dog .icon{background: url(../img/dog.png) no-repeat center;}
+		.box-cow .icon{background: url(../img/cow.png) no-repeat center;}
+		.box-hippo .icon{background: url(../img/hippo.png) no-repeat center;}
+		.box a{
+			margin:10px auto;
+			text-decoration: none;
+			border:2px solid #fff;
+			width: 156px;	height: 46px;
+			display: block;
+			color: #2ecc71;
+			font-size: 30px; line-height: 46px;
+			padding-left: 20px;
+			background: url(../img/arrow.png) no-repeat 130px center;
+			position: relative;
+			transition: 0.4s;
+		}
+		.line{
+			display: block;
+			transition: 0.4s;
+			background: #fff;
+		}
+		.line-top{
+			width: 0px;
+			height: 2px;
+			position: absolute;
+			left: -80%;
+			top: -2px;
+		}
+		.line-right{
+			height: 0px;
+			width: 2px;
+			position: absolute;
+			right:-2px;
+			top: -250%;
+		}
+		.line-bottom{
+			width: 0px;
+			height: 2px;
+			position: absolute;
+			right:-100%;
+			top: 46px;
+		}
+		.line-left{
+			height: 0px;
+			width: 2px;
+			position: absolute;
+			left:-2px;
+			top: 250%
+		}
+		a:hover{background-position: 140px center;}
+		a:hover .line-top{left: 2px;width: 100px;}
+		a:hover .line-right{top: 2px;height: 45px;}
+		a:hover .line-bottom{right: 2px;width: 100px;}
+		a:hover .line-left{top: 2px;height: 45px;}
